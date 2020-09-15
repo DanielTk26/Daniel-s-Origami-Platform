@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Daniel's Origami Platform</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <div class="left-side">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="nav-link-wrapper">
+        <a href="chat.html">Community</a>
+      </div>
+    </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Daniel's Origami Platform
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://origami.me/wp-content/uploads/2018/05/camel-19-min.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <a href="http://origami.me/camel/"> <div class="subtitle">Here is how to build an origami camel.</div></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://origami.me/wp-content/uploads/2018/05/chameleon-13-min.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+    
+            </div>
+
+           <a href="http://origami.me/chameleon/"> <div class="subtitle">Here is how to make an origami chameleon</div></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://origami.me/wp-content/uploads/2018/01/pigeon-9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+           <a href="http://origami.me/pigeon/"> <div class="subtitle">Here is how to make an origami pigeon</div></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://origami.me/wp-content/uploads/2018/05/teddy-16-min.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <a href="http://origami.me/teddy-bear/"><div class="subtitle">Here is how to make an origami teddy</div></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://origami.me/wp-content/uploads/2018/05/panda-9-min.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             
+            </div>
+
+          <a href="http://origami.me/panda/">  <div class="subtitle">Here is how to make an origami panda</div></a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(https://origami.me/wp-content/uploads/2018/05/cicada-11-min.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+           <a href="http://origami.me/flying-cicada/"><div class="subtitle">Here is how to make an origami flying cicada</div></a> 
+          </div>
+        </div>
+
+       
+      
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
